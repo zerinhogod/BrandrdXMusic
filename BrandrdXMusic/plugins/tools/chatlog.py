@@ -34,15 +34,15 @@ async def join_watcher(_, message):
             if members.id == app.id:
                 count = await app.get_chat_members_count(chat.id)
                 username = (
-                    message.chat.username if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
+                    message.chat.username if message.chat.username else "Grupo privado"
                 )
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
-                    f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {message.chat.title}\n"
-                    f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** {message.chat.id}\n"
-                    f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
-                    f"**📈𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs:** {count}\n"
-                    f"**🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ:** {message.from_user.mention}"
+                    f"**📝Fui adicionado em um #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
+                    f"**📌Nome do grupo:** {message.chat.title}\n"
+                    f"**🍂ID do grupo:** {message.chat.id}\n"
+                    f"**🔐Username do grupo:** @{username}\n"
+                    f"**📈Quantidade de membros no grupo:** {count}\n"
+                    f"**🤔Adicionado por:** {message.from_user.mention}"
                 )
                 await app.send_photo(
                     LOG_GROUP_ID,
@@ -52,7 +52,7 @@ async def join_watcher(_, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    f"😍𝐀ᴅᴅᴇᴅ 𝐁ʏ😍",
+                                    f"ADICIONADO POR",
                                     url=f"tg://openmessage?user_id={message.from_user.id}",
                                 )
                             ]
