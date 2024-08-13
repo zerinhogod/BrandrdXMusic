@@ -65,7 +65,7 @@ async def put_queue_index(
             )
             duration = seconds_to_min(dur)
         except:
-            duration = "ᴜʀʟ sᴛʀᴇᴀᴍ"
+            duration = "URL da stream"
             dur = 0
     else:
         dur = 0
