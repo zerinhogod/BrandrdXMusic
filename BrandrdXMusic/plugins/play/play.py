@@ -188,7 +188,7 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
+                    "Meu dono ainda não pagou o meu Spotify.\n\nTenta depois."
                 )
             if "track" in url:
                 try:
@@ -315,7 +315,7 @@ async def play_commnd(
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
-            return await play_logs(message, streamtype="M3u8 or Index Link")
+            return await play_logs(message, streamtype="Link da index ou M3u8")
     else:
         if len(message.command) < 2:
             buttons = botplaylist_markup(_)
@@ -414,7 +414,7 @@ async def play_commnd(
                     ),
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype=f"Searched on Youtube")
+                return await play_logs(message, streamtype=f"Pesquisado no Youtube")
             else:
                 buttons = track_markup(
                     _,
@@ -429,7 +429,7 @@ async def play_commnd(
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                return await play_logs(message, streamtype=f"URL Searched Inline")
+                return await play_logs(message, streamtype=f"URL pesquisada diretamente")
 
 
 @app.on_callback_query(filters.regex("MusicStream") & ~BANNED_USERS)
@@ -505,7 +505,7 @@ async def play_music(client, CallbackQuery, _):
 async def piyush_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
+            "Tá se escondendo porque?\n\nAbre as configurações do teu grupo de merda.\n-> Vai em Administradores\n-> Clica no teu nome\n-> Tira a permissão de anônimo.",
             show_alert=True,
         )
     except:
