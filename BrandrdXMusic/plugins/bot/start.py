@@ -33,7 +33,7 @@ async def start_pm(client, message: Message, _):
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             return await message.reply_video(
-                       video="https://telegra.ph//file/0e90689e1471f962dacff.mp4",
+                       video="https://graph.org/file/bed9c667d2a08ee71f280.mp4",
                        caption=_["help_1"].format(config.SUPPORT_CHAT), reply_markup=keyboard
             )
         if name[0:3] == "sud":
@@ -41,7 +41,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>sᴜᴅᴏʟɪsᴛ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} acabou de iniciar o bot para verificar <b>sudolist</b>.\n\n<b>ID do usuário:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
                 )
             return
         if name[0:3] == "inf":
@@ -79,19 +79,19 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} acabou de iniciar o bot para verificar <b>informações da música</b>.\n\n<b>ID do usuário:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
                 )
     else:
         out = private_panel(_)
         await message.reply_video(
-            video="https://graph.org/file/967c7d074685e1ef93462.mp4",
+            video="https://graph.org/file/bed9c667d2a08ee71f280.mp4",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                text=f"{message.from_user.mention} começou a me usar.\n\n<b>ID do usuário:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
             )
 
 
