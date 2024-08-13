@@ -392,7 +392,7 @@ async def add_playlist_clone(client: Client, message: Message, _):
                 [
                     [
                         InlineKeyboardButton(
-                            "๏ ᴡᴀɴᴛ ʀᴇᴍᴏᴠᴇ ᴀɴʏ sᴏɴɢs? ๏",
+                            "QUER REMOVER ALGUMA MÚSICA?",
                             callback_data=f"open_playlist {user_id}",
                         )
                     ]
@@ -447,7 +447,7 @@ async def add_playlist_clone(client: Client, message: Message, _):
                 [
                     [
                         InlineKeyboardButton(
-                            "๏ ᴡᴀɴᴛ ʀᴇᴍᴏᴠᴇ ᴀɴʏ sᴏɴɢs? ๏",
+                            "QUER REMOVER ALGUMA MÚSICA?",
                             callback_data=f"open_playlist {user_id}",
                         )
                     ]
@@ -633,7 +633,7 @@ async def del_plist(client, CallbackQuery, _):
         [
             [
                 InlineKeyboardButton(
-                    "๏ ʀᴇᴄᴏᴠᴇʀ ʏᴏᴜʀ sᴏɴɢ ๏", callback_data=f"recover_playlist {videoid}"
+                    "Recupere sua música", callback_data=f"recover_playlist {videoid}"
                 )
             ]
         ]
