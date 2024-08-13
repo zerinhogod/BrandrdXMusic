@@ -156,7 +156,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     basic[videoid] = False
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
-        media="https://te.legra.ph/file/ba39a10ba20736f42f202.jpg",
+        media="https://te.legra.ph/file/6a28c40f0dc5966f54b17.mp4",
         caption=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
@@ -165,17 +165,17 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Streaming :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'Reproduzindo agora:\n\nTítulo: {x["title"]}\nDuração: {x["dur"]}\nPor: {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Queued :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'Fila:\n\nTítulo: {x["title"]}\nDuração: {x["dur"]}\nPor: {x["by"]}\n\n'
         else:
-            msg += f'✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'Título: {x["title"]}\nDuração: {x["dur"]}\nPor: {x["by"]}\n\n'
     if "Queued" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(msg, reply_markup=buttons)
-        if "✨" in msg:
-            msg = msg.replace("✨", "")
+        if "🤝" in msg:
+            msg = msg.replace("🤝", "")
         link = await HottyBin(msg)
         med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
