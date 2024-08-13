@@ -251,7 +251,7 @@ def isArgInt(txt) -> list:
 
 @app.on_message(filters.command(["q", "r"]) & filters.reply)
 async def msg_quotly_cmd(self: app, ctx: Message):
-    ww = await ctx.reply_text("ᴡᴀɪᴛ ᴀ sᴇᴄᴏɴᴅ......")
+    ww = await ctx.reply_text("Peraí...")
     is_reply = False
     if ctx.command[0].endswith("r"):
         is_reply = True
@@ -305,20 +305,20 @@ async def msg_quotly_cmd(self: app, ctx: Message):
 
 
 __HELP__ = """
-**ǫᴜᴏᴛᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs**
+**Comandos de geração de citações**
 
-ᴜsᴇ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴄʀᴇᴀᴛᴇ ǫᴜᴏᴛᴇs ғʀᴏᴍ ᴍᴇssᴀɢᴇs:
+Use esses comandos para criar citações a partir de mensagens:
 
-- `/q`: ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴀ sɪɴɢʟᴇ ᴍᴇssᴀɢᴇ.
-- `/r`: ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴀ sɪɴɢʟᴇ ᴍᴇssᴀɢᴇ ᴀɴᴅ ɪᴛs ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ.
+- `/q`: Crie uma citação a partir de uma única mensagem.
+- `/r`: Recrie uma citação a partir de uma única mensagem e sua mensagem de resposta.
 
-**ᴇxᴀᴍᴘʟᴇs:**
-- `/q `: ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs.
+**Exemplos:**
+- `/q `: Crie uma citação a partir de mensagens respondidas.
 
-- `/r `: ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs.
+- `/r `: Crie uma citação a partir de mensagens respondidas.
 
-**ɴᴏᴛᴇ:**
-ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ғᴏʀ ᴛʜᴇ ǫᴜᴏᴛᴇ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴡᴏʀᴋ.
+**Nota:**
+Certifique-se de responder a uma mensagem para que o comando de citação funcione.
 """
 
-__MODULE__ = "Qᴜᴏᴛᴇ"
+__MODULE__ = "Citar"
