@@ -45,18 +45,18 @@ valid_stations = "\n".join([f"`{name}`" for name in sorted(RADIO_STATION.keys())
     & ~BANNED_USERS
 )
 async def radio(client, message: Message):
-    msg = await message.reply_text("ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ....")
+    msg = await message.reply_text("Pera aí....")
     try:
         try:
             userbot = await get_assistant(message.chat.id)
             get = await app.get_chat_member(message.chat.id, userbot.id)
         except ChatAdminRequired:
             return await msg.edit_text(
-                f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                f"Tá de sacanagem porra?! Tô sem permissão para invitar o meu assistente {userbot.mention} nessa bosta de grupo {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
             return await msg.edit_text(
-                text=f"» {userbot.mention} ᴀssɪsᴛᴀɴᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ {message.chat.title}\n\n𖢵 ɪᴅ : `{userbot.id}`\n𖢵 ɴᴀᴍᴇ : {userbot.mention}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{userbot.username}\n\nᴘʟᴇᴀsᴇ ᴜɴʙᴀɴ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴀɴᴅ ᴘʟᴀʏ ᴀɢᴀɪɴ...",
+                text=f"PORRAAAAAAAAAAAAA!!!! O buceta do meu assistente {userbot.mention} tá banido nesse grupo de bosta {message.chat.title}\n\nID do assistente: `{userbot.id}`\nNome: {userbot.mention}\nUsername: @{userbot.username}\n\nTira o ban dele ou o COMBINADO vai derrubar essa espelunca de grupo...",
             )
     except UserNotParticipant:
         if message.chat.username:
@@ -70,34 +70,34 @@ async def radio(client, message: Message):
                 invitelink = await client.export_chat_invite_link(message.chat.id)
             except ChatAdminRequired:
                 return await msg.edit_text(
-                    f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                    f"Tá de sacanagem porra?! Tô sem permissão para invitar o meu assistente {userbot.mention} nessa bosta de grupo {message.chat.title}."
                 )
             except InviteRequestSent:
                 try:
                     await app.approve_chat_join_request(message.chat.id, userbot.id)
                 except Exception as e:
                     return await msg.edit(
-                        f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                        f"Não tô conseguindo chamar o meu assistente {userbot.mention} pra essa bosta de grupo {message.chat.title}.\n\n**Por esse motivo:** `{ex}`"
                     )
             except Exception as ex:
                 if "channels.JoinChannel" in str(ex) or "Username not found" in str(ex):
                     return await msg.edit_text(
-                        f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                        f"Tá de sacanagem porra?! Tô sem permissão para invitar o meu assistente {userbot.mention} nessa bosta de grupo {message.chat.title}."
                     )
                 else:
                     return await msg.edit_text(
-                        f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                        f"Não tô conseguindo chamar o meu assistente {userbot.mention} pra essa bosta de grupo {message.chat.title}.\n\n**Por esse motivo:** `{ex}`"
                     )
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
         anon = await msg.edit_text(
-            f"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nɪɴᴠɪᴛɪɴɢ {userbot.mention} ᴛᴏ {message.chat.title}."
+            f"Peraí...\n\nConvidando meu assistente {userbot.mention} para {message.chat.title}."
         )
         try:
             await userbot.join_chat(invitelink)
             await asyncio.sleep(2)
             await msg.edit_text(
-                f"{userbot.mention} ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
+                f"Deu bom, meu assistente {userbot.mention} está nessa bosta,\n\nComeçando o show..."
             )
         except UserAlreadyParticipant:
             pass
@@ -106,16 +106,16 @@ async def radio(client, message: Message):
                 await app.approve_chat_join_request(message.chat.id, userbot.id)
             except Exception as e:
                 return await msg.edit(
-                    f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                    f"Não tô conseguindo chamar o meu assistente {userbot.mention} pra essa bosta de grupo {message.chat.title}.\n\n**Por esse motivo:** `{ex}`"
                 )
         except Exception as ex:
             if "channels.JoinChannel" in str(ex) or "Username not found" in str(ex):
                 return await msg.edit_text(
-                    f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                    f"Tá de sacanagem porra?! Tô sem permissão para invitar o meu assistente {userbot.mention} nessa bosta de grupo {message.chat.title}."
                 )
             else:
                 return await msg.edit_text(
-                    f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {userbot.mention} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                    f"Não tô conseguindo chamar o meu assistente {userbot.mention} pra essa bosta de grupo {message.chat.title}.\n\n**Por esse motivo:** `{ex}`"
                 )
 
         try:
@@ -171,12 +171,12 @@ async def radio(client, message: Message):
             ex_type = type(e).__name__
             err = e if ex_type == "AssistantErr" else _["general_3"].format(ex_type)
             return await mystic.edit_text(err)
-        return await play_logs(message, streamtype="M3u8 or Index Link")
+        return await play_logs(message, streamtype="Link da index ou M3u8")
     else:
         await message.reply(
-            f"ɢɪᴠᴇ ᴍᴇ ᴀ sᴛᴀᴛɪᴏɴ ɴᴀᴍᴇ ᴛᴏ ᴘʟᴀʏ ʀᴀᴅɪᴏ\nʙᴇʟᴏᴡ ᴀʀᴇ sᴏᴍᴇ sᴛᴀᴛɪᴏɴ ɴᴀᴍᴇ:\n{valid_stations}"
+            f"Coisa de velho, hein?! Mas me diz aí o nome da estação de rádio para tocar enquanto estou calmo...\nAlguns nomes de estações:\n{valid_stations}"
         )
 
 
-__MODULE__ = "Rᴀᴅɪᴏ"
-__HELP__ = f"\n/radio [sᴛᴀᴛɪᴏɴ ɴᴀᴍᴇ] - ᴛᴏ ᴘʟᴀʏ **ʀᴀᴅɪᴏ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ**\n\nʙᴇʟᴏᴡ ᴀʀᴇ sᴏᴍᴇ sᴛᴀᴛɪᴏɴ ɴᴀᴍᴇ:\n{valid_stations}"
+__MODULE__ = "Rádio dos idosos"
+__HELP__ = f"\n/radio [Nome da estação] - Para reproduzir **a rádio dos velhos cafonas**\n\nAlguns nomes de estações:\n{valid_stations}"
