@@ -11,7 +11,7 @@ mongo_url_pattern = re.compile(r'mongodb(?:\+srv)?:\/\/[^\s]+')
 @Hotty.on_message(filters.command("mongochk"))
 async def mongo_command(client, message: Message):
     if len(message.command) < 2:
-        await message.reply("Please enter your MongoDB URL after the command. Example: /mongochk your_mongodb_url")
+        await message.reply("Por favor, insira a URL do seu MongoDB após o comando. Exemplo: /mongochk sua_url_mongodb")
         return
 
     mongo_url = message.command[1]
@@ -20,8 +20,8 @@ async def mongo_command(client, message: Message):
             # Attempt to connect to the MongoDB instance
             client = MongoClient(mongo_url, serverSelectionTimeoutMS=5000)
             client.server_info()  # Will cause an exception if connection fails
-            await message.reply("𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗨𝗥𝗟 𝗶𝘀 𝘃𝗮𝗹𝗶𝗱 𝗮𝗻𝗱 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹✅")
+            await message.reply("A URL do MongoDB é válida e a conexão foi bem-sucedida.")
         except Exception as e:
             await message.reply(f"Failed to connect to MongoDB: {e}")
     else:
-        await message.reply("𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗨𝗥𝗟 𝗳𝗼𝗿𝗺𝗮𝘁💔")
+        await message.reply("Formato de URL do MongoDB inválido.")
