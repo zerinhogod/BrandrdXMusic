@@ -35,7 +35,7 @@ def UserbotWrapper(command):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} is under maintenance, visit [support chat]({SUPPORT_CHAT}) for knowing the reason.",
+                    text=f"{app.mention} está em manutenção. Visite o [grupo suporte]({SUPPORT_CHAT}) para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
@@ -53,7 +53,7 @@ def UserbotWrapper(command):
                     get = await app.get_chat_member(chat_id, userbot.id)
                 except ChatAdminRequired:
                     return await message.reply_text(
-                        "➥ 𝗣𝐥𝐞𝐚𝐬𝐞  𝗠𝐚𝐤𝐞  𝗠𝐞  𝗔𝐝𝐦𝐢𝐧  𝗔𝐧𝐝  𝗠𝐮𝐬𝐭  𝗚𝐢𝐯𝐞  𝗜𝐧𝐯𝐢𝐭𝐞  𝗨𝐬𝐞𝐫𝐬  𝗣𝐨𝐰𝐞𝐫  𝗙𝐨𝐫  𝗜𝐧𝐯𝐢𝐭𝐞  𝗠𝐲 𝗔𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭  𝗜𝐧  𝗧𝐡𝐢𝐬  𝗖𝐡𝐚𝐭."
+                        "Ô criatura, me dá admin e permissão de convite para usuários para que eu possa convidar meu assistente para esse muquifo de grupo."
                     )
                 if (
                     get.status == ChatMemberStatus.BANNED
@@ -67,7 +67,7 @@ def UserbotWrapper(command):
                             [
                                 [
                                     InlineKeyboardButton(
-                                        text="๏ ᴜɴʙᴀɴ ᴀssɪsᴛᴀɴᴛ ๏",
+                                        text="DESBANIR ASSISTENTE",
                                         callback_data=f"unban_assistant",
                                     )
                                 ]
@@ -90,24 +90,24 @@ def UserbotWrapper(command):
                             invitelink = await app.export_chat_invite_link(chat_id)
                         except ChatAdminRequired:
                             return await message.reply_text(
-                                "➥ 𝗣𝐥𝐞𝐚𝐬𝐞  𝗠𝐚𝐤𝐞  𝗠𝐞  𝗔𝐝𝐦𝐢𝐧 𝗔𝐧𝐝 𝗠𝐮𝐬𝐭  𝗚𝐢𝐯𝐞  𝗜𝐧𝐯𝐢𝐭𝐞  𝗨𝐬𝐞𝐫𝐬  𝗣𝐨𝐰𝐞𝐫  𝗙𝐨𝐫  𝗜𝐧𝐯𝐢𝐭𝐞  𝗠𝐲 𝗔𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭  𝗜𝐧  𝗧𝐡𝐢𝐬  𝗖𝐡𝐚𝐭."
+                                "Ô criatura, me dá admin e permissão de convite para usuários para que eu possa convidar meu assistente para esse muquifo de grupo."
                             )
                         except Exception as e:
                             return await message.reply_text(
-                                f"{app.mention} 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽✅\n\n𝗜𝗱:- {userbot.mention}.."
+                                f"{app.mention} assistente entrou no grupo.\n\nID:- {userbot.mention}.."
                             )
 
                 if invitelink.startswith("https://t.me/+"):
                     invitelink = invitelink.replace(
                         "https://t.me/+", "https://t.me/joinchat/"
                     )
-                myu = await message.reply_text("𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗝𝗼𝗶𝗻𝗶𝗻𝗴 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁..")
+                myu = await message.reply_text("Assistente entrando no grupo...")
                 try:
                     await asyncio.sleep(1)
                     await userbot.join_chat(invitelink)
                     await myu.delete()
                     await message.reply_text(
-                        f"{app.mention} 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽✅\n\n𝗜𝗱:- **@{userbot.username}**"
+                        f"{app.mention} assistente entrou no grupo.\n\nID:- **@{userbot.username}**"
                     )
                 except InviteRequestSent:
                     try:
@@ -119,13 +119,13 @@ def UserbotWrapper(command):
                     await asyncio.sleep(3)
                     await myu.delete()
                     await message.reply_text(
-                        f"{app.mention} 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽✅\n\n𝗜𝗱:- **@{userbot.username}**"
+                        f"{app.mention} assistente entrou no grupo.\n\nID:- **@{userbot.username}**"
                     )
                 except UserAlreadyParticipant:
                     pass
                 except Exception as e:
                     return await message.reply_text(
-                        f"{app.mention} 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 𝗚𝗿𝗼𝘂𝗽✅\n\n𝗜𝗱:- **@{userbot.username}**"
+                        f"{app.mention} assistente entrou no grupo.\n\nID:- **@{userbot.username}**"
                     )
 
                 links[chat_id] = invitelink
