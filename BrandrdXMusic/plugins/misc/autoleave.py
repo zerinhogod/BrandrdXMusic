@@ -65,7 +65,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "» ʙᴏᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʟᴇғᴛ ᴠɪᴅᴇᴏᴄʜᴀᴛ ʙᴇᴄᴀᴜsᴇ ɴᴏ ᴏɴᴇ ᴡᴀs ʟɪsᴛᴇɴɪɴɢ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.",
+                        "Tá de brincadeira com minha cara?! Geral vazou e me deixaram sozinho na call... Tô metendo o pé também... Tomanocu!",
                     )
                 except:
                     continue
