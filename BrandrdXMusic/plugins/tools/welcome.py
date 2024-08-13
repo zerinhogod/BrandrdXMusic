@@ -86,7 +86,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             member.chat.id,
             photo=welcomeimg,
             caption=f"""
-Bem-vindo ao grupo {member.chat.title}
+Fala tu {member.chat.title}! 🤝
 ➖➖➖➖➖➖➖➖➖➖➖
 Nome: {user.mention}
 ID: {user.id}
