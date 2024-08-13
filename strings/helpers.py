@@ -3,11 +3,11 @@ HELP_1 = """<b><u>Comandos admin:</b></u>
 Basta adicionar <b>c</b> no início dos comandos para usá-los para canal.
 
 
-/pause : Pausar.
+/pause : Pausar música/vídeo atual.
 
-/resume : Retomar.
+/resume : Retomar música/vídeo atual.
 
-/skip : Pular.
+/skip : Pular música/vídeo atual.
 
 /end ou /stop : Limpa a fila e encerra a transmissão atual.
 
