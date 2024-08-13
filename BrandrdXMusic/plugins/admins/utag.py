@@ -19,21 +19,21 @@ async def tag_all_users(_, message):
     chat_id = message.chat.id
     if len(message.text.split()) == 1:
         await message.reply_text(
-            "** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@utag Hi Friends`"
+            "**Dê algum texto para marcar todos, tipo assim:** `@utag Salve seus arrombados, tomanocu geral!`"
         )
         return
 
     text = message.text.split(None, 1)[1]
     if text:
         await message.reply_text(
-            "**ᴜᴛᴀɢ [ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ] sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!**\n\n**๏ ᴛᴀɢɢɪɴɢ ᴡɪᴛʜ sʟᴇᴇᴘ ᴏғ 7 sᴇᴄ.**\n\n**➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag**"
+            "**Tagueamento ilimitado iniciado com sucesso!**\n\n**Tagueamento com intervalo de 7 segundos.**\n\n**➥ Desligar o tagueamento com o comando /stoputag**"
         )
 
     SPAM_CHATS[chat_id] = True
     f = True
     while f:
         if SPAM_CHATS.get(chat_id) == False:
-            await message.reply_text("**ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢɢɪɴɢ sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴏᴘᴘᴇᴅ.**")
+            await message.reply_text("**Tagueamento ilimitado interrompido com sucesso.**")
             break
         usernum = 0
         usertxt = ""
@@ -46,7 +46,7 @@ async def tag_all_users(_, message):
                 if usernum == 5:
                     await app.send_message(
                         message.chat.id,
-                        f"{text}\n{usertxt}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag ||",
+                        f"{text}\n{usertxt}\n\n➥ Desligar tagueamento por: /stoputag",
                     )
                     usernum = 0
                     usertxt = ""
@@ -67,6 +67,6 @@ async def stop_tagging(_, message):
     chat_id = message.chat.id
     if SPAM_CHATS.get(chat_id) == True:
         SPAM_CHATS[chat_id] = False
-        return await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ sᴛᴏᴘᴘɪɴɢ ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢɢɪɴɢ...**")
+        return await message.reply_text("**Por favor, aguarde, parando o tagueamento ilimitado...**")
     else:
-        await message.reply_text("**ᴜᴛᴀɢ ᴘʀᴏᴄᴇss ɪs ɴᴏᴛ ᴀᴄᴛɪᴠᴇ**")
+        await message.reply_text("**O processo de tagueamento ilimitado não está ativo.**")
