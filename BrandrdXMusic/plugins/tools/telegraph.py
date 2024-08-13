@@ -11,26 +11,26 @@ from BrandrdXMusic import app
 async def get_link_group(client, message):
     if not message.reply_to_message:
         return await message.reply_text(
-            "ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴘʜ"
+            "Responda uma mídia para upar no Telegraph"
         )
     try:
-        text = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...")
+        text = await message.reply("Guenta aí...")
 
         async def progress(current, total):
-            await text.edit_text(f"📥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ... {current * 100 / total:.1f}%")
+            await text.edit_text(f"📥 Baixando... {current * 100 / total:.1f}%")
 
         try:
             local_path = await message.reply_to_message.download( progress=progress
             )
-            await text.edit_text("📤 ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
+            await text.edit_text("📤 Fazendo upload para o Telegraph....")
             upload_path = upload_file(local_path)
             await text.edit_text(
-                f"🌐 | [ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ](https://telegra.ph{upload_path[0]})",
+                f"[LINK](https://telegra.ph{upload_path[0]})",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ",
+                                "LINK",
                                 url=f"https://telegra.ph{upload_path[0]}",
                             )
                         ]
@@ -42,7 +42,7 @@ async def get_link_group(client, message):
             except Exception:
                pass
         except Exception as e:
-            await text.edit_text(f"❌ |ғɪʟᴇ ᴜᴘʟᴏᴀᴅ ғᴀɪʟᴇᴅ \n\n<i>ʀᴇᴀsᴏɴ: {e}</i>")
+            await text.edit_text(f"Deu errado...\n\n<i>Motivo: {e}</i>")
             try:
                 os.remove(local_path)
             except Exception:
@@ -52,20 +52,20 @@ async def get_link_group(client, message):
         pass
 
 __HELP__ = """
-**ᴛᴇʟᴇɢʀᴀᴘʜ ᴜᴘʟᴏᴀᴅ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs**
+**Comandos de upload no Telegraph**
 
-ᴜsᴇ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ:
+Use estes comandos para fazer o upload de mídias para o Telegraph:
 
-- `/tgm`: ᴜᴘʟᴏᴀᴅ ʀᴇᴘʟɪᴇᴅ ᴍᴇᴅɪᴀ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.
-- `/tgt`: sᴀᴍᴇ ᴀs `/tgm`.
-- `/telegraph`: sᴀᴍᴇ ᴀs `/tgm`.
-- `/tl`: sᴀᴍᴇ ᴀs `/tgm`.
+- `/tgm`: Faça o upload da mídia respondida para o Telegraph.
+- `/tgt`: Faz a mesma coisa do comando `/tgm`.
+- `/telegraph`: Faz a mesma coisa do comando `/tgm`.
+- `/tl`: Faz a mesma coisa do comando `/tgm`.
 
-**ᴇxᴀᴍᴘʟᴇ:**
-- ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴏʀ ᴠɪᴅᴇᴏ ᴡɪᴛʜ `/tgm` ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛ.
+**Exemplo:**
+- Responda a uma foto ou vídeo com `/tgm` para fazer o upload.
 
-**ɴᴏᴛᴇ:**
-ʏᴏᴜ ᴍᴜsᴛ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ғɪʟᴇ ғᴏʀ ᴛʜᴇ ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴡᴏʀᴋ.
+**Nota:**
+Você deve responder a um arquivo de mídia para que o upload funcione.
 """
 
-__MODULE__ = "Tᴇʟᴇɢʀᴀᴘʜ"
+__MODULE__ = "Telegraph"
