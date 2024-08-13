@@ -19,19 +19,19 @@ from telethon.tl.functions.phone import (
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-    await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+    await msg.reply("**A call foi iniciada, será que os arrombados vão me chamar pra tocar?**")
 
 
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-    await msg.reply("**😕ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ💔**")
+    await msg.reply("**Aleluia! Essa bosta foi desligada, ninguém aguentava mais...**")
 
 
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
 async def brah3(app: app, message: Message):
-    text = f"➻ {message.from_user.mention}\n\n**๏ ɪɴᴠɪᴛɪɴɢ ɪɴ ᴠᴄ ᴛᴏ :**\n\n**➻ **"
+    text = f"➻ {message.from_user.mention}\n\n**Convidando para a call:**\n\n**➻ **"
     x = 0
     for user in message.video_chat_members_invited.users:
         try:
@@ -43,13 +43,13 @@ async def brah3(app: app, message: Message):
     try:
         invite_link = await app.export_chat_invite_link(message.chat.id)
         add_link = f"https://t.me/{app.username}?startgroup=true"
-        reply_text = f"{text} 🤭🤭"
+        reply_text = f"{text} 🤭"
 
         await message.reply(
             reply_text,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="๏ ᴊᴏɪɴ ᴠᴄ ๏", url=add_link)],
+                    [InlineKeyboardButton(text="ENTRAR NA CALL", url=add_link)],
                 ]
             ),
         )
@@ -65,15 +65,15 @@ def calculate_math(client, message):
     expression = message.text.split("/math ", 1)[1]
     try:
         result = eval(expression)
-        response = f"ᴛʜᴇ ʀᴇsᴜʟᴛ ɪs : {result}"
+        response = f"O resultado foi: {result}"
     except:
-        response = "ɪɴᴠᴀʟɪᴅ ᴇxᴘʀᴇssɪᴏɴ"
+        response = "Expressão inválida"
     message.reply(response)
 
 
 @app.on_message(filters.command(["spg"], ["/", "!", "."]))
 async def search(event):
-    msg = await event.respond("Searching...")
+    msg = await event.respond("Buscando...")
     async with aiohttp.ClientSession() as session:
         start = 1
         async with session.get(
@@ -84,7 +84,7 @@ async def search(event):
             result = ""
 
             if not response.get("items"):
-                return await msg.edit("No results found!")
+                return await msg.edit("Nenhum resultado encontrado!")
             for item in response["items"]:
                 title = item["title"]
                 link = item["link"]
@@ -99,7 +99,7 @@ async def search(event):
                     continue
                 result += f"{title}\n{link}\n\n"
             prev_and_next_btns = [
-                Button.inline("▶️Next▶️", data=f"next {start+10} {event.text.split()[1]}")
+                Button.inline("PRÓXIMO", data=f"next {start+10} {event.text.split()[1]}")
             ]
             await msg.edit(result, link_preview=False, buttons=prev_and_next_btns)
             await session.close()
