@@ -26,4 +26,4 @@ async def logger(client, message, _):
 @language
 async def logger(client, message, _):
     await message.reply_document("cookies/logs.csv")
-    await message.reply_text("Por favor, verifique o arquivo fornecido para os logs de cookies.")
+    await message.reply_text("Verifique o arquivo fornecido para os logs de cookies.")
