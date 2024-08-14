@@ -207,7 +207,7 @@ str_2 : "Stream válido verificado.\n\nProcessando..."
 str_3 : "Falha ao transmitir stream ao vivo do YouTube, formato ao vivo não encontrado."
 
 ping_1 : "{0} está rebatendo a bolinha..."
-ping_2 : "🏓 Pong: <code>{0}ms</code>\n\n<b><u>Estatísticas do sistema {1}:</u></b>\n\nTempo de atividade: {2}\n❄RAM: {3}\nCPU: {4}\nDisco: {5}\n☁Py-TGCalls: <code>{6}ms</code>"
+ping_2 : "🏓 Pong: <code>{0}ms</code>\n\n<b><u>Estatísticas do sistema {1}:</u></b>\n\nTempo de atividade: {2}\nRAM: {3}\nCPU: {4}\nDisco: {5}\nPy-TGCalls: <code>{6}ms</code>"
 
 queue_1 : "Buscando fila...\n\nPor favor, aguarde..."
 queue_2 : "Fila vazia."
