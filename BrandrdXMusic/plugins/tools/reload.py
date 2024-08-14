@@ -94,10 +94,6 @@ async def close_menu(_, CallbackQuery):
         await CallbackQuery.message.reply_text(
             f"Fechado por: {CallbackQuery.from_user.mention}"
         )
-                    # Schedule a task to delete the message after 30 seconds
-            async def delete_message():
-                await asyncio.sleep(30)
-                await message.delete()
     except:
         pass
         
