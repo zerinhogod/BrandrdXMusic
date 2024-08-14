@@ -25,7 +25,7 @@ async def must_join_channel(client: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://graph.org/file/3fb3f4c8a1250c6a50af1.jpg",
+                    photo="FOTO AQUI",
                     caption=f"Tô vendo aqui que tu não entrou no [grupo suporte]({link}) Mas se tu quiser me usar (lá ele) entra no [grupo suporte]({link}) e tenta de novo. ",
                     reply_markup=InlineKeyboardMarkup(
                         [
