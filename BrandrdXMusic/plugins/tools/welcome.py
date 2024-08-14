@@ -93,7 +93,7 @@ ID: {user.id}
 Username @{user.username}
 ➖➖➖➖➖➖➖➖➖➖➖
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"ME ADICIONE NO SEU GRUPO", url=f"https://t.me/BRANDED_KUDI_BOT?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"ME ADICIONE NO SEU GRUPO", url=f"https://t.me/COMBINADOMUSIC_bot?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
