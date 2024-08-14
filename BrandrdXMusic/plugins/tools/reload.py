@@ -96,7 +96,11 @@ async def close_menu(_, CallbackQuery):
         )
     except:
         pass
-
+        
+            # Schedule a task to delete the message after 30 seconds
+            async def delete_message():
+                await asyncio.sleep(30)
+                await message.delete()
 
 @app.on_callback_query(filters.regex("stop_downloading") & ~BANNED_USERS)
 @ActualAdminCB
