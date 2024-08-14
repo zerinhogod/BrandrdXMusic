@@ -92,8 +92,7 @@ async def member_has_left(client: app, member: ChatMemberUpdated):
                 profile_path=photo,
             )
         
-            caption = f"**#New_Member_Left**\n\n{user.mention} **saiu do grupo...**\n**Aleluia!**"
-            button_text = "VER QUEM ERA"
+            caption = f"**#New_Member_Left**\n\n{user.mention} ({user.id} - @{user.username}) **saiu do grupo...**\n**Aleluia!**"
 
             # Generate a deep link to open the user's profile
             deep_link = f"tg://openmessage?user_id={user.id}"
