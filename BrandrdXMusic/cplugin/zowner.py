@@ -35,7 +35,7 @@ from BrandrdXMusic.utils.database import get_assistant, is_active_chat
 @Client.on_message(filters.command("repo") & filters.group)
 async def repo(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/2fd9703e31548f7a1aaaa.jpg",
+        photo=f"https://te.legra.ph/file/6a28c40f0dc5966f54b17.mp4",
         caption=f"""COMBINADO MUSIC""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -53,7 +53,7 @@ async def repo(client: Client, message: Message):
 async def help(client: Client, message: Message):
 
     await message.reply_photo(
-        photo=f"https://graph.org/file/2fd9703e31548f7a1aaaa.jpg",
+        photo=f"https://te.legra.ph/file/6a28c40f0dc5966f54b17.mp4",
         caption=f"""COMBINADO MUSIC""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -70,7 +70,7 @@ async def help(client: Client, message: Message):
 @Client.on_message(filters.command("repo") & filters.private)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/2fd9703e31548f7a1aaaa.jpg",
+        photo=f"https://te.legra.ph/file/6a28c40f0dc5966f54b17.mp4",
         caption=f"""COMBINADO MUSIC""",
         reply_markup=InlineKeyboardMarkup(
             [
