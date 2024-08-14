@@ -8,10 +8,10 @@ from BrandrdXMusic import app
 async def download_instagram_video(client, message):
     if len(message.command) < 2:
         await message.reply_text(
-            "Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇ Iɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ URL ᴀғᴛᴇʀ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ"
+            "Eita leigo hein?! Me manda a URL do reel do Instagram após o comando."
         )
         return
-    a = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
+    a = await message.reply_text("Carregando...")
     url = message.text.split()[1]
     api_url = (
         f"https://nodejs-1xn1lcfy3-jobians.vercel.app/v2/downloader/instagram?url={url}"
@@ -25,11 +25,11 @@ async def download_instagram_video(client, message):
         await a.delete()
         await client.send_video(message.chat.id, video_url)
     else:
-        await a.edit("Fᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʀᴇᴇʟ")
+        await a.edit("Deu ruim pra baixar esse reel... Algum estrelinha de conta privada talvez?!")
 
 
-__MODULE__ = "Iɴsᴛᴀɢʀᴀᴍ"
-__HELP__ = """/reel [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
-/ig [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
-/instagram [ɪɴsᴛᴀɢʀᴀᴍ ʀᴇᴇʟ ᴜʀʟ] - Tᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇᴇʟ ʙʏ ʙᴏᴛ
+__MODULE__ = "Instagram"
+__HELP__ = """/reel [URL do reel do Instagram] - Para baixar o reel
+/ig [URL do reel do Instagram] - Para baixar o reel
+/instagram [URL do reel do Instagram] - Para baixar o reel
 """
