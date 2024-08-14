@@ -296,8 +296,8 @@ ST_B_13 : "Comandos admin ➜"
 ST_B_14 : "Reprodução ➜"
 
 SA_B_1 : "Estatísticas gerais"
-SA_B_2 : "BÁSICO"
-SA_B_3 : "GERAL"
+SA_B_2 : "COMPLETO"
+SA_B_3 : "BÁSICO"
 
 QU_B_1 : "FILA"
 QU_B_2 : " {0} —————————— {1}"
