@@ -17,7 +17,7 @@ tg_3 : "Falha ao baixar mídia do Telegram, por favor tente novamente..."
 tg_4 : "Download já concluído."
 tg_5 : "Download já concluído ou cancelado."
 tg_6 : "Download cancelado."
-tg_7 : "Download cancelado por : {0}"
+tg_7 : "Download cancelado por: {0}"
 tg_8 : "Falha ao parar o download."
 tg_9 : "Falha ao obter a tarefa de download em andamento..."
 
