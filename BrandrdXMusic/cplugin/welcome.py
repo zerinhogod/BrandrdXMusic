@@ -180,7 +180,7 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
 
 @Client.on_message(filters.command("welcome") & ~filters.private)
 async def auto_state(client: Client, message):  # Added 'message' as a parameter
-    usage = "**ᴜsᴀɢᴇ:**\n**⦿ /welcome [on|off]**"
+    usage = "**Uso:**\n**/welcome [on|off]**"
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
