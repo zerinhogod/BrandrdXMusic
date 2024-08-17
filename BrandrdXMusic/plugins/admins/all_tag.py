@@ -92,7 +92,7 @@ async def cancelcmd(_, message):
             SPAM_CHATS.remove(chat_id)
         except Exception:
             pass
-        return await message.reply_text("**Tááááá... parei de marcar a turma...**")
+        return await message.reply_text("**Não precisava de ignorância, mas beleza, parei de marcar a turma.**")
 
     else:
         await message.reply_text("**Nenhum processo em andamento!**")
