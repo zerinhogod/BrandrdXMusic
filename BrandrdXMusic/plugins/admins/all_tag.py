@@ -20,7 +20,7 @@ async def tag_all_users(_, message):
     replied = message.reply_to_message
     if len(message.command) < 2 and not replied:
         await message.reply_text(
-            "**Dê algum texto para marcar todos, tipo assim:** `@all Salve seus arrombados, tomanocu geral!`"
+            "**Coloca algum texto para marcar todos porra, tipo assim:** `@all Salve seus arrombados, tomanocu geral!`"
         )
         return
     if replied:
