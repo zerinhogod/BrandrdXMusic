@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from strings.__init__ import LOGGERS
 from ..logging import LOGGER
 
-BOT_TOKEN = "7290157519:AAEpxiPRdd_e662Hi63tsHjfbofkJQRVlvs"
+BOT_TOKEN = "7261208882:AAFVXE5Rih3RwTkcNHK1yzidJhadacBwjjU"
 MONGO_DB_URI = "mongodb+srv://combinado:combinado@cluster0.2a7qm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 STRING_SESSION = "AQGxRWwAhX2eOenUllxevL7LCrgywCiL5P8Ih6LWdj4ZDuG8-S2mw-jkpudq8GYUvt16g-0-tZU3dqbJeiq0TnhGYZEsdes00V0wfuLJLc0gfCwD7KHkdvhisk8bmtPc8Uf_lwftW2cLwtULr1VMFQK6uSvSkPQq5fWbZ2YwM5Mv3HaGVDNTSvaNIJUYbyhY4-AGqsa3t84yBWsTSoIWAIUn4Pqe1M8BXvtx2nzMCUDAJP8LmXS9GLUEea9jhqgSzYE-j33WZqmthEAU7gy9xHUNDFzZE7F5ihgv6_7ptZBPXyBJ8LCDUf-yR1hQKkY-Y2DQCoiJ44IxZeB1DqR3Tg_Mhy2BJAAAAAG-1TfmAA"
 
