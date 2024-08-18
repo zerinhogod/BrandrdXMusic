@@ -42,7 +42,7 @@ def vote_mode_markup(_, current, mode: Union[bool, str] = None):
         [
             InlineKeyboardButton(
                 text=_["BACK_BUTTON"],
-                callback_data="settings_helper",
+                callback_data="settingsback_helper",
             ),
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ],
@@ -65,7 +65,7 @@ def auth_users_markup(_, status: Union[bool, str] = None):
         [
             InlineKeyboardButton(
                 text=_["BACK_BUTTON"],
-                callback_data="settings_helper",
+                callback_data="settingsback_helper",
             ),
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ],
@@ -104,7 +104,7 @@ def playmode_users_markup(
         [
             InlineKeyboardButton(
                 text=_["BACK_BUTTON"],
-                callback_data="settings_helper",
+                callback_data="settingsback_helper",
             ),
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
         ],
