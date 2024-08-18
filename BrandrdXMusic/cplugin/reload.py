@@ -21,9 +21,9 @@ from BrandrdXMusic.utils.formatters import alpha_to_int, get_readable_time
 from BrandrdXMusic.mongo.afkdb import LOGGERS
 from config import BANNED_USERS, adminlist, lyrical
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
-STRING_SESSION = getenv("STRING_SESSION", "")
+BOT_TOKEN = "7261208882:AAFVXE5Rih3RwTkcNHK1yzidJhadacBwjjU"
+MONGO_DB_URI = "mongodb+srv://combinado:combinado@cluster0.2a7qm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+STRING_SESSION = "AQGxRWwAhX2eOenUllxevL7LCrgywCiL5P8Ih6LWdj4ZDuG8-S2mw-jkpudq8GYUvt16g-0-tZU3dqbJeiq0TnhGYZEsdes00V0wfuLJLc0gfCwD7KHkdvhisk8bmtPc8Uf_lwftW2cLwtULr1VMFQK6uSvSkPQq5fWbZ2YwM5Mv3HaGVDNTSvaNIJUYbyhY4-AGqsa3t84yBWsTSoIWAIUn4Pqe1M8BXvtx2nzMCUDAJP8LmXS9GLUEea9jhqgSzYE-j33WZqmthEAU7gy9xHUNDFzZE7F5ihgv6_7ptZBPXyBJ8LCDUf-yR1hQKkY-Y2DQCoiJ44IxZeB1DqR3Tg_Mhy2BJAAAAAG-1TfmAA"
 
 from dotenv import load_dotenv
 
