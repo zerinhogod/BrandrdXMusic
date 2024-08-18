@@ -153,25 +153,5 @@ Você pode mencionar todos os membros do grupo para passar algum recado. [Apenas
 """
 
 HELP_17 = """
-<b><u>Comandos apenas para membros do COMBINADO:</b></u>
-/broadcast [Mensagem ou resposta de mensagem] : Transmitir uma mensagem para grupos que o bot está.
-<u>Modos de broadcast:</u>
-<b>-pin</b> : Fixar suas mensagens transmitidas pelo bot em grupos que o bot está.
-<b>-pinloud</b> : Fixar suas mensagens transmitidas pelo bot em grupos que o bot está e notifica os usuários.
-<b>-user</b> : Transmita a mensagem para os usuários que tem pv com o bot.
-<b>-assistant</b> : Transmita sua mensagem da conta assistente do bot.
-<b>-nobot</b> : Força o bot a não transmitir a mensagem.
-<b>Exemplo:</b> <code>/broadcast -user -assistant -pin Salve fudidos, tomanocu geral!</code>
-/blacklistchat [ID do grupo] : Adiciona grupo à lista de bloqueio de uso do bot.
-/whitelistchat [ID do grupo] : Remove grupo da lista de bloqueio de uso do bot.
-/blacklistedchat : Exibir grupos da lista de bloqueio.
-/block [usuário ou responda uma mensagem do usuário] : Bloquear usuário de usar o bot.
-/unblock [usuário ou responda uma mensagem do usuário] : Desbloquear usuário de usar o bot.
-/blockedusers : Exibir lista de usuários bloqueados.
-/gban [usuário ou responda uma mensagem do usuário] : Banir o usuário de todos os grupos que o bot está e o coloca na lista de bloqueio de usar o bot.
-/ungban [usuário ou responda uma mensagem do usuário] : Remove o ban do usuário de todos os grupos que o bot está e remove da lista de bloqueio de usar o bot.
-/gbannedusers : Exibir lista dos usuários banidos global.
-/logs : Exibir logs do bot.
-/logger [enable/disable] : O bot começará a registrar os logs que acontecem no bot.
-/maintenance [enable/disable] : Ativar/desativar modo manutenção do bot.
+teste
 """
