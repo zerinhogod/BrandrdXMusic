@@ -2,19 +2,12 @@ HELP_1 = """<b><u>Comandos admin:</b></u>
 
 Basta adicionar <b>c</b> no início dos comandos para usá-los para canal.
 
-
 /pause : Pausar música/vídeo atual.
-
 /resume : Retomar música/vídeo atual.
-
 /skip : Pular música/vídeo atual.
-
 /end ou /stop : Limpa a fila e encerra a transmissão atual.
-
 /player : Exibir painel interativo do player.
-
 /queue : Exibir lista de reprodução.
-
 /lyrics [nome da música] : Pesquise as letras da música solicitada e os resultados.
 """
 
@@ -29,7 +22,7 @@ Usuários autorizados ganham permissão de administrador no bot sem permissão d
 """
 
 HELP_3 = """
-<u><b>Recurso de transmissão</b></u> [apenas para sudoers] :
+<u><b>Recurso de transmissão</b></u> [apenas para membros do COMBINADO]:
 
 /broadcast [Mensagem ou resposta de mensagem] : Transmitir uma mensagem para grupos que o bot está.
 
@@ -40,10 +33,10 @@ HELP_3 = """
 <b>-assistant</b> : Transmita sua mensagem da conta assistente do bot.
 <b>-nobot</b> : Força o bot a não transmitir a mensagem.
 
-<b>Exemplo:</b> <code>/broadcast -user -assistant -pin testando mensagem</code>
+<b>Exemplo:</b> <code>/broadcast -user -assistant -pin Salve fudidos, tomanocu geral!</code>
 """
 
-HELP_4 = """<u><b>Recurso de lista negra de grupo:</b></u> [apenas para sudoers]
+HELP_4 = """<u><b>Recurso de lista negra de grupo</b></u> [apenas para membros do COMBINADO]:
 
 Restrinja grupos de merda para usar nosso precioso bot.
 
@@ -53,7 +46,7 @@ Restrinja grupos de merda para usar nosso precioso bot.
 """
 
 HELP_5 = """
-<u><b>Bloquear usuários:</b></u> [apenas para sudoers]
+<u><b>Bloquear usuários</b></u> [apenas para membros do COMBINADO]:
 
 Começa a ignorar o usuário na lista negra, para que ele não possa usar comandos do bot.
 
@@ -69,13 +62,12 @@ O bot consegue transmitir áudio e vídeo na call do grupo.
 
 /cplay : Inicia a transmissão da música solicitada no grupo.
 /cvplay : Inicia a transmissão do vídeo solicitada no grupo.
-/cplayforce or /cvplayforce : Interrompe o streaming em andamento e inicia o streaming da faixa solicitada.
-
+/cplayforce ou /cvplayforce : Interrompe o streaming em andamento e inicia o streaming da faixa solicitada.
 /channelplay [Nome do grupo ou ID] ou [disable] : Conecte o canal a um grupo e iniciar a transmissão de faixas com a ajuda de comandos enviados em grupo.
 """
 
 HELP_7 = """
-<u><b>Recurso de ban global:</b></u> [apenas para sudoers]
+<u><b>Recurso de ban global</b></u> [apenas para membros do COMBINADO]:
 
 /gban [usuário ou responda uma mensagem do usuário] : Proíbe globalmente o usuário de todos os bate-papos que o bot está e o coloca na lista negra de usar o bot.
 /ungban [usuário ou responda uma mensagem do usuário] : Remove o ban global do usuário de todos os bate-papos que o bot está e remove da lista negra de usar o bot.
@@ -92,12 +84,10 @@ HELP_8 = """
 """
 
 HELP_9 = """
-<u><b>Modo manutenção:</b></u> [apenas para sudoers]
+<u><b>Modo manutenção</b></u> [apenas para membros do COMBINADO]:
 
 /logs : Exibir logs do bot.
-
 /logger [enable/disable] : O bot começará a registrar os logs que acontecem no bot.
-
 /maintenance [enable/disable] : Ativar/desativar modo manutenção do bot.
 """
 
@@ -106,9 +96,7 @@ HELP_10 = """
 
 /start : Iniciar o bot de música.
 /help : Exibir menu de ajuda com explicação dos comandos.
-
 /ping : Exibir ping e estatísticas do sistema.
-
 /stats : Mostra as estatísticas gerais do bot.
 """
 
@@ -118,9 +106,8 @@ HELP_11 = """
 <b>v :</b> Significa reprodução de vídeo.
 <b>force :</b> Significa forçar reprodução.
 
-/play ᴏʀ /vplay : Inicia reprodução de áudio.
-
-/playforce ᴏʀ /vplayforce : Remove reprodução atual e inicia reprodução do novo áudio solicitado.
+/play ou /vplay : Inicia reprodução de áudio.
+/playforce ou /vplayforce : Remove reprodução atual e inicia reprodução do novo áudio solicitado.
 """
 
 HELP_12 = """
@@ -148,6 +135,6 @@ HELP_15 = """
 
 Você pode controlar a velocidade de reprodução do stream em andamento. [Apenas administradores do grupo]
 
-/speed or /playback : Ajustar a velocidade de reprodução de áudio no grupo.
-/cspeed or /cplayback : Ajustar a velocidade de reprodução de áudio no canal.
+/speed ou /playback : Ajustar a velocidade de reprodução de áudio no grupo.
+/cspeed ou /cplayback : Ajustar a velocidade de reprodução de áudio no canal.
 """
