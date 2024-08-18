@@ -153,5 +153,9 @@ Você pode mencionar todos os membros do grupo para passar algum recado. [Apenas
 """
 
 HELP_17 = """
-teste
+<b><u>Comandos apenas para membros do COMBINADO:</b></u>
+
+[Clique aqui](https://t.me/c/2103331719/16674) para exibir comandos.
+
+Se você não faz parte do COMBINADO, o link acima não vai funcionar.
 """
