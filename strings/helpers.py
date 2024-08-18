@@ -118,10 +118,12 @@ HELP_12 = """
 """
 
 HELP_13 = """
-<b><u>Buscar fluxo:</b></u>
+<b><u>Avançar e retroceder:</b></u>
 
-/seek [duração em segundos] : Procure o fluxo com a duração determinada.
-/seekback [duração em segundos] : Busca retroativa do fluxo até a duração determinada.
+Você pode avançar ou retroceder quantos segundos quiser do que estiver reproduzindo na call.
+
+/seek [duração em segundos] : Avança transmissão em quantos segundos for determinado.
+/seekback [duração em segundos] : Retrocede transmissão em quantos segundos for determinado.
 """
 
 HELP_14 = """
@@ -137,4 +139,15 @@ Você pode controlar a velocidade de reprodução do stream em andamento. [Apena
 
 /speed ou /playback : Ajustar a velocidade de reprodução de áudio no grupo.
 /cspeed ou /cplayback : Ajustar a velocidade de reprodução de áudio no canal.
+"""
+
+HELP_16 = """
+<b><u>Marcações:</b></u>
+
+Você pode mencionar todos os membros do grupo para passar algum recado. [Apenas administradores do grupo]
+
+@all [mensagem] : Iniciar processo de marcações, marcando 5 membros do grupo a cada mensagem.
+/cancel : Interromper processo de marcações atual.
+
+<b>Exemplo:</b> <code>@all Vem pra call seus fudidos!</code>
 """
