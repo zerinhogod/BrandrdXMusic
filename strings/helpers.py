@@ -22,7 +22,7 @@ Usuários autorizados ganham permissão de administrador no bot sem permissão d
 """
 
 HELP_3 = """
-<u><b>Recurso de transmissão</b></u> [apenas para membros do COMBINADO]:
+<u><b>Recurso de broadcast</b></u> [apenas para membros do COMBINADO]:
 
 /broadcast [Mensagem ou resposta de mensagem] : Transmitir uma mensagem para grupos que o bot está.
 
@@ -92,7 +92,7 @@ HELP_9 = """
 """
 
 HELP_10 = """
-<b><u>Ping e status:</b></u>
+<b><u>Ajuda e informações:</b></u>
 
 /start : Iniciar o bot de música.
 /help : Exibir menu de ajuda com explicação dos comandos.
@@ -106,8 +106,8 @@ HELP_11 = """
 <b>v :</b> Significa reprodução de vídeo.
 <b>force :</b> Significa forçar reprodução.
 
-/play ou /vplay : Inicia reprodução de áudio.
-/playforce ou /vplayforce : Remove reprodução atual e inicia reprodução do novo áudio solicitado.
+/play ou /vplay : Inicia uma reprodução.
+/playforce ou /vplayforce : Remove reprodução atual e inicia uma nova reprodução solicitada.
 """
 
 HELP_12 = """
@@ -150,4 +150,57 @@ Você pode mencionar todos os membros do grupo para passar algum recado. [Apenas
 /cancel : Interromper processo de marcações atual.
 
 <b>Exemplo:</b> <code>@all Vem pra call seus fudidos!</code>
+"""
+
+HELP_17 = """
+<b><u>Comandos apenas para membros do COMBINADO:</b></u>
+
+<u><b>Recurso de broadcast</b></u>:
+
+/broadcast [Mensagem ou resposta de mensagem] : Transmitir uma mensagem para grupos que o bot está.
+
+<u>Modos de transmissão:</u>
+<b>-pin</b> : Fixar suas mensagens transmitidas pelo bot em grupos que o bot está.
+<b>-pinloud</b> : Fixar suas mensagens transmitidas pelo bot em grupos que o bot está e notifica os usuários.
+<b>-user</b> : Transmita a mensagem para os usuários que iniciaram o bot.
+<b>-assistant</b> : Transmita sua mensagem da conta assistente do bot.
+<b>-nobot</b> : Força o bot a não transmitir a mensagem.
+
+<b>Exemplo:</b> <code>/broadcast -user -assistant -pin Salve fudidos, tomanocu geral!</code>
+
+---------------------------------
+
+<u><b>Recurso de lista negra de grupo</b></u>:
+
+Restrinja grupos de merda para usar nosso precioso bot.
+
+/blacklistchat [ID do grupo] : Adiciona grupo à lista negra de uso do bot.
+/whitelistchat [ID do grupo] : Remove grupo da lista negra de uso do bot.
+/blacklistedchat : Exibir grupos da lista negra.
+
+---------------------------------
+
+<u><b>Bloquear usuários</b></u>:
+
+Começa a ignorar o usuário na lista negra, para que ele não possa usar comandos do bot.
+
+/block [usuário ou responda uma mensagem do usuário] : Bloquear usuário do bot.
+/unblock [usuário ou responda uma mensagem do usuário] : Desbloquear usuário do bot.
+/blockedusers : Exibir lista de usuários bloqueados.
+
+---------------------------------
+
+<u><b>Recurso de ban global</b></u>:
+
+/gban [usuário ou responda uma mensagem do usuário] : Proíbe globalmente o usuário de todos os bate-papos que o bot está e o coloca na lista negra de usar o bot.
+/ungban [usuário ou responda uma mensagem do usuário] : Remove o ban global do usuário de todos os bate-papos que o bot está e remove da lista negra de usar o bot.
+/gbannedusers : Exibir lista dos usuários banidos globalmente.
+
+---------------------------------
+
+<u><b>Modo manutenção</b></u>:
+
+/logs : Exibir logs do bot.
+/logger [enable/disable] : O bot começará a registrar os logs que acontecem no bot.
+/maintenance [enable/disable] : Ativar/desativar modo manutenção do bot.
 """
