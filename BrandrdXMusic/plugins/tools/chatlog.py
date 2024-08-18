@@ -37,12 +37,12 @@ async def join_watcher(_, message):
                     message.chat.username if message.chat.username else "Grupo privado"
                 )
                 msg = (
-                    f"**📝BOT adicionado em #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
-                    f"**📌Nome do grupo:** {message.chat.title}\n"
-                    f"**🍂ID do grupo:** {message.chat.id}\n"
-                    f"**🔐Acesso ao grupo:** @{username}\n"
-                    f"**📈Membros:** {count}\n"
-                    f"**🤔Adicionado por:** {message.from_user.mention}"
+                    f"**BOT adicionado em #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
+                    f"**Nome do grupo:** {message.chat.title}\n"
+                    f"**ID do grupo:** {message.chat.id}\n"
+                    f"**Acesso ao grupo:** @{username}\n"
+                    f"**Membros:** {count}\n"
+                    f"**Adicionado por:** {message.from_user.mention}"
                 )
                 await app.send_photo(
                     LOG_GROUP_ID,
