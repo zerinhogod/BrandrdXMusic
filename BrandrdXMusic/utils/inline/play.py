@@ -66,14 +66,6 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
             InlineKeyboardButton(text="⏩️", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⏹️", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(
-                text="DONOS1", url=f"https://t.me/combinadomusic"
-            ),
-            InlineKeyboardButton(
-                text="CHAT", url=f"https://t.me/combinadomusic"
-            ),
-        ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -87,14 +79,6 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="🔁", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="⏩️", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⏹️", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="DONOS2", url=f"https://t.me/combinadomusic"
-            ),
-            InlineKeyboardButton(
-                text="CHAT", url=f"https://t.me/combinadomusic"
-            ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -243,15 +227,6 @@ def stream_markup2(_, chat_id):
             InlineKeyboardButton(text="⏩", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⏹️", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-[
-            InlineKeyboardButton(
-                text="DONOS3", url=f"https://t.me/combinadomusic"
-            ),
-            InlineKeyboardButton(
-                text="CHAT", url=f"https://t.me/combinadomusic"
-            ),
-        ],
-
         [
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
