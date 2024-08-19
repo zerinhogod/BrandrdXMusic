@@ -68,7 +68,7 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="DONOS", url=f"https://t.me/combinadomusic"
+                text="DONOS1", url=f"https://t.me/combinadomusic"
             ),
             InlineKeyboardButton(
                 text="CHAT", url=f"https://t.me/combinadomusic"
@@ -90,7 +90,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="DONOS", url=f"https://t.me/combinadomusic"
+                text="DONOS2", url=f"https://t.me/combinadomusic"
             ),
             InlineKeyboardButton(
                 text="CHAT", url=f"https://t.me/combinadomusic"
@@ -245,7 +245,7 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="DONOS", url=f"https://t.me/combinadomusic"
+                text="DONOS3", url=f"https://t.me/combinadomusic"
             ),
             InlineKeyboardButton(
                 text="CHAT", url=f"https://t.me/combinadomusic"
