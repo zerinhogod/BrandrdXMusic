@@ -22,7 +22,7 @@ tg_8 : "Não consigo parar de baixarrrrrrrrrrrrrrrr, tu me bugou porraaaaa!"
 tg_9 : "Deu b.o ao obter a tarefa de download em andamento..."
 
 call_1 : "Tu é leigo, é?! Eu preciso de <b>permissão para convidar usuários via link</b> para convidar o meu assistente para o seu grupinho de merda..."
-call_2 : "<b>PORRAAAAA, TÁ DE SACANAGEM?! O meu assistente tá banido nessa bosta.</b>\n\n<b>ID dele:</b> <code>{1}</code>\n<b>Nome:</b> {2}\n<b>Usuário:</b> @{3}\n\nSe tu não desbanir, vou derrubar essa bosta de grupinho..."
+call_2 : "<b>PORRAAAAA, TÁ DE SACANAGEM?! O meu assistente tá banido nessa bosta.</b>\n\n<b>🦝 Dados dele:</b>\n<b>ID:</b> <code>{1}</code>\n<b>Nome:</b> {2}\n<b>Usuário:</b> @{3}\n\nSe tu não desbanir, vou derrubar essa bosta de grupinho..."
 call_3 : "Não tô conseguindo convidar o meu assistente para esse grupo de bosta.\n\nMotivo: <code>{1}</code>"
 call_4 : "Calma aí...\n\nConvidando meu assistente para essa espelunca..."
 call_5 : "Pronto, o meu assistente entrou nessa bagaça.\n\nTentando iniciar a transmissão (por mais que eu não queira)..."
