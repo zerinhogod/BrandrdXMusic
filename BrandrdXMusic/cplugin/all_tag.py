@@ -55,7 +55,7 @@ async def tag_all_users(client, _, message):
             if usernum == 5:
                 await client.send_message(
                     message.chat.id,
-                    f"{text}\n\n{usertxt}\n➥ Para parar de marcar a galera é só usar: /cancel",
+                    f"{text}\n\n{usertxt}", #text = mensagem | usertxt = marcar usuarios | depois disso tinha o texto de cancelar
                 )
                 await asyncio.sleep(2)
                 usernum = 0
