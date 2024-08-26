@@ -42,17 +42,8 @@ async def brah3(app: app, message: Message):
 
     try:
         invite_link = await app.export_chat_invite_link(message.chat.id)
-        add_link = f"https://t.me/{chat.username}?voicechat"
         reply_text = f"{text}"
 
-        await message.reply(
-            reply_text,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton(text="ENTRAR NA CALL", url=add_link)],
-                ]
-            ),
-        )
     except Exception as e:
         print(f"Error: {e}")
 
