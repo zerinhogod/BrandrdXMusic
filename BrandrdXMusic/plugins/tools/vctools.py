@@ -37,11 +37,7 @@ async def brah3(app: app, message: Message):
         try:
             text += f"[{user.first_name}](tg://user?id={user.id}) para a call."
             x += 1
-        except Exception:
-            pass
 
-    except Exception as e:
-        print(f"Error: {e}")
 
 
 ####
