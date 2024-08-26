@@ -45,14 +45,7 @@ async def brah3(app: app, message: Message):
         add_link = f"https://t.me/{app.username}?startgroup=true"
         reply_text = f"{text}"
 
-        await message.reply(
-            reply_text,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    
-                ]
-            ),
-        )
+
     except Exception as e:
         print(f"Error: {e}")
 
