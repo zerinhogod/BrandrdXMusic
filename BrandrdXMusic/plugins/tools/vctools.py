@@ -42,7 +42,7 @@ async def brah3(app: app, message: Message):
 
     try:
         invite_link = await app.export_chat_invite_link(message.chat.id)
-        add_link = f"https://t.me/{username}?voicechat"
+        add_link = f"https://t.me/{chat.username}?voicechat"
         reply_text = f"{text}"
 
         await message.reply(
