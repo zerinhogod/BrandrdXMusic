@@ -35,7 +35,7 @@ async def brah3(app: app, message: Message):
     x = 0
     for user in message.video_chat_members_invited.users:
         try:
-            text += f"[{user.first_name}](tg://user?id={user.id}) para a call"
+            text += f"[{user.first_name}](tg://user?id={user.id}) para a call."
             x += 1
         except Exception:
             pass
@@ -49,7 +49,7 @@ async def brah3(app: app, message: Message):
             reply_text,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="ENTRAR NA CALL", url=add_link)],
+                    
                 ]
             ),
         )
