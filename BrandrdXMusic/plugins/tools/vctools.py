@@ -49,7 +49,7 @@ async def brah3(app: app, message: Message):
             reply_text,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    ,
+                    [InlineKeyboardButton(text="🤝", url=add_link)],
                 ]
             ),
         )
