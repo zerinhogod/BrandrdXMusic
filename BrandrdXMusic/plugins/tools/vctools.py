@@ -19,7 +19,7 @@ from telethon.tl.functions.phone import (
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-    await msg.reply("**A call foi iniciada, será que os arrombados vão me chamar pra tocar?**")
+    await msg.reply("**A porra da call foi ligada, quem entrar é corno!**")
 
 
 # vc off
@@ -31,11 +31,11 @@ async def brah2(_, msg):
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
 async def brah3(app: app, message: Message):
-    text = f"{message.from_user.mention} convidou "
+    text = f"{message.from_user.mention} convidou para a call:\n"
     x = 0
     for user in message.video_chat_members_invited.users:
         try:
-            text += f"[{user.first_name}](tg://user?id={user.id}) para a call."
+            text += f"[{user.first_name}](tg://user?id={user.id}) "
             x += 1
         except Exception:
             pass
@@ -49,7 +49,7 @@ async def brah3(app: app, message: Message):
             reply_text,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="🤝", url=add_link)],
+                    ,
                 ]
             ),
         )
