@@ -95,16 +95,16 @@ START_IMG_URL = getenv(
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/adc241f65e920429b824f.png"
 )
-PLAYLIST_IMG_URL = getenv("IMAGEM_AQUI", None)
-STATS_IMG_URL = getenv("IMAGEM_AQUI", None)
-TELEGRAM_AUDIO_URL = getenv("IMAGEM_AQUI", None)
-TELEGRAM_VIDEO_URL = getenv("IMAGEM_AQUI", None)
-STREAM_IMG_URL = getenv("IMAGEM_AQUI", None)
-SOUNCLOUD_IMG_URL = getenv("IMAGEM_AQUI", None)
-YOUTUBE_IMG_URL = getenv("IMAGEM_AQUI", None)
-SPOTIFY_ARTIST_IMG_URL = getenv("IMAGEM_AQUI", None)
-SPOTIFY_ALBUM_IMG_URL = getenv("IMAGEM_AQUI", None)
-SPOTIFY_PLAYLIST_IMG_URL = getenv("IMAGEM_AQUI", None)
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+STATS_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+STREAM_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/fe4373a26d55df8ed04e5.png"
 
 
 def time_to_seconds(time):
