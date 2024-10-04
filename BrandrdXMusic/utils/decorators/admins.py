@@ -24,7 +24,7 @@ def AdminRightsCheck(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>grupo suporte</a> para saber o motivo.",
+                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>suporte</a> para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
@@ -120,7 +120,7 @@ def AdminActual(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>grupo suporte</a> para saber o motivo.",
+                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>suporte</a> para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
@@ -165,7 +165,7 @@ def ActualAdminCB(mystic):
         if await is_maintenance() is False:
             if CallbackQuery.from_user.id not in SUDOERS:
                 return await CallbackQuery.answer(
-                    f"{app.mention} em manutenção, visite o grupo suporte para saber o motivo.",
+                    f"{app.mention} em manutenção, visite o suporte para saber o motivo.",
                     show_alert=True,
                 )
         try:
