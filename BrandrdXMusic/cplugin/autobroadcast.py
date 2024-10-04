@@ -24,8 +24,8 @@ BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "JUNTE-SE A NÓS",
-                url=f"https://t.me/combinadomusic",
+                "SUPORTE",
+                url=f"https://t.me/COMBINADOASSISTANT_bot",
             )
         ]
     ]
@@ -35,18 +35,18 @@ MESSAGE = f"""**Sou muito melhor que muita JBL por aí...
 
 🎧 PLAY + VPLAY + CPLAY 🎧
 
-➥ Mensagem de boas vindas - aviso de saída do grupo, tagall, vctag, ban - mute, poesias, letras, músicas - download de vídeo, etc
+➥ Gerenciamento de grupos, tagall, vctag, ban - mute, poesias, letras, músicas - download de vídeo, etc
 
-🔐Use [/start](https://t.me/https://t.me/COMBINADOMUSIC_bot?start=help) para me conhecer.
+🔐Use [/start](https://t.me/https://t.me/COMBINADO_bot?start=help) para me conhecer.
 
-➲ BOT :** @COMBINADOMUSIC_bot"""
+➲ BOT :** @COMBINADO_bot"""
 
 BUTTON = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
                 "ME ADICIONE NO SEU GRUPO",
-                url=f"https://t.me/COMBINADOMUSIC_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
+                url=f"https://t.me/COMBINADO_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
             )
         ]
     ]
