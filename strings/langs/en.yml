@@ -218,8 +218,8 @@ queue_6 : "<b>🕚 Duração:</b> Duração desconhecida do stream\n\nClique no 
 queue_7 : "\nClique no botão abaixo para obter a lista completa da fila."
 queue_8 : "<b>{0} Player</b>\n\n<b>Stream:</b> {1}\n\n<b>Tipo de stream:</b> {2}\n<b>Solicitado por:</b> {3} 🦝\n{4}"
 
-stream_1 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Título:</b> <a href={0}>{1}</a>\n<b>Duração:</b> {2} minutos\n<b>A pedido de:</b> {3}\n\nSe não for boa, podem xingar essa desgraça!"
-stream_2 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Tipo de stream:</b> Live stream [URL]\n<b>A pedido de:</b> {0}\n\nSe não for boa, podem xingar essa desgraça!" 
+stream_1 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Título:</b> <a href={0}>{1}</a>\n<b>Duração:</b> {2} minutos\n<b>A pedido de:</b> {3}\n\nSe não for boa, xinguem muito!"
+stream_2 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Tipo de stream:</b> Live stream [URL]\n<b>A pedido de:</b> {0}\n\nSe não for boa, xinguem muito!" 
 stream_3 : "<b>Feito por [COMBINADO](https://t.me/COMBINADOASSISTANT_bot)"
 
 #General
