@@ -59,7 +59,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "GRUPO", url=f"https://t.me/combinadomusic"
+                        "SUPORTE", url=f"https://t.me/COMBINADOASSISTANT_bot"
                     )
                 ]
             ]
@@ -76,7 +76,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "GRUPO", url=f"https://t.me/combinadomusic"
+                        "SUPORTE", url=f"https://t.me/COMBINADOASSISTANT_bot"
                     )
                 ]
             ]
