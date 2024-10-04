@@ -35,7 +35,7 @@ def UserbotWrapper(command):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} está em manutenção. Visite o [grupo suporte]({SUPPORT_CHAT}) para saber o motivo.",
+                    text=f"{app.mention} está em manutenção. Visite o [suporte]({SUPPORT_CHAT}) para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
