@@ -199,7 +199,7 @@ play_19 : "Playlist na fila:"
 play_20 : "Posição na fila:"
 play_21 : "Adicionados {0} faixas à fila.\n\n<b>Confira:</b> <a href={1}>clique aqui</a>"
 play_22 : "Selecione o modo no qual você deseja reproduzir as consultas dentro do seu grupo: {0}"
-help_1 : "Escolha a categoria para a qual você deseja obter ajuda.\nFaça suas perguntas no <a href={0}>grupo suporte</a>\n\nTodos os comandos podem ser usados com: <code>/</code>"
+help_1 : "Escolha a categoria para a qual você deseja obter ajuda.\nFaça suas perguntas no <a href={0}>suporte</a>\n\nTodos os comandos podem ser usados com: <code>/</code>"
 help_2 : "Clica no botão abaixo que eu te envio meu menu no teu pv. Se me tratar bem lá, talvez eu mande minha rola cybernética pra tu..."
 
 str_1 : "Por favor, forneça links de index ou M3U8."
@@ -207,7 +207,7 @@ str_2 : "Stream válido verificado.\n\nProcessando..."
 str_3 : "Falha ao transmitir stream ao vivo do YouTube, formato ao vivo não encontrado."
 
 ping_1 : "{0} está rebatendo a bolinha..."
-ping_2 : "🦝🏓 Pong: <code>{0}ms</code>\n\n<b><u>Estatísticas do sistema {1}:</u></b>\n\nTempo de atividade: {2}\nRAM: {3}\nCPU: {4}\nDisco: {5}\nPy-TGCalls: <code>{6}ms</code>"
+ping_2 : "🦝🏓 Pong: {0}ms\n\n<b><u>Estatísticas do sistema {1}:</u></b>\n\nTempo de atividade: {2}\nRAM: {3}\nCPU: {4}\nDisco: {5}\nPy-TGCalls: {6}ms"
 
 queue_1 : "Calma aí...\n\nTô buscando essa bosta de fila..."
 queue_2 : "A fila tá vazia, igual teu saldo bancário."
