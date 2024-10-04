@@ -90,9 +90,9 @@ admin_40 : "Votado positivo."
 
 start_1 : "Tô funcionando, carai! 🤝\n\n<b>Tempo online:</b> {1}"
 start_2 : "Salve {0}!\n\nEu sou o {1}! 🤝\n\nMuito melhor que muita JBL por aí e poderoso com alguns recursos incríveis.\n\n<b><u>Plataformas suportadas:</b></u> YouTube, Spotify, Resso, Apple Music e SoundCloud.\n──────────────────\n<b>Use /help para verificar os comandos.\n──────────────────\n Suporte: **[CLIQUE AQUI](https://t.me/COMBINADOASSISTANT_bot).\nFeito por: **Zero 🦝.</b>"
-start_3 : "Ei {0}!\nEu sou o {1}! 🤝\n\nAgora vou derrubar esse grupo... brincadeira. Agora posso tocar músicas nas calls do grupo."
+start_3 : "Ei {0}!\nEu sou o {1}! 🤝\n\nEm alguns segundos este grupo será derrubado...\n<tg-spoiler>Brincadeira... Me use para gerenciar essa bosta de grupo e de bônus tocar umas músicas.</tg-spoiler>"
 start_4 : "<b>SUPERGRUPO NECESSÁRIO</b>\n\nPor favor, converta seu <b>grupo</b> para <b>supergrupo</b> e depois me adicione novamente.\n\n<b>COMO FAZER SUPERGRUPO?</b>\n- Torne o histórico de chat do seu grupo <b>visível</b> uma vez."
-start_5 : "<b>GRUPO NA LISTA NEGRA</b>\n\nEste grupo está na lista negra na base de dados {0}.\nSolicite a um <a href={1}>usuário sudo</a> para remover seu chat da lista negra ou visite <a href={2}>o grupo suporte.</a>"
+start_5 : "<b>GRUPO NA LISTA NEGRA</b>\n\nEste grupo está na lista negra na base de dados {0}.\nSolicite a um <a href={1}>membro do COMBINADO</a> para remover seu chat da lista negra ou visite <a href={2}>o suporte.</a>"
 start_6 : "<b>INFORMAÇÕES DA MÚSICA</b>\n\n<b>Título:</b> {0}\n\n<b>Duração:</b> {1} minutos\n<b>Visualizações:</b> <code>{2}</code>\n<b>Publicado em:</b> {3}\n<b>Canal:</b> <a href={4}>{5}</a>\n\n<u><b>Pesquisa realizada por: {6}</b></u>"
 
 #Playlist
