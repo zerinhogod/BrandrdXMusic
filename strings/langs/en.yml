@@ -89,7 +89,7 @@ admin_39 : "Removido 1 ponto positivo."
 admin_40 : "Votado positivo."
 
 start_1 : "Tô funcionando, carai! 🤝\n\n<b>Tempo online:</b> {1}"
-start_2 : "Salve {0}!\n\nEu sou o {1}! 🤝\n\nMuito melhor que muita JBL por aí e poderoso com alguns recursos incríveis.\n\n<b><u>Plataformas suportadas:</b></u> YouTube, Spotify, Resso, Apple Music e SoundCloud.\n──────────────────\n<b>Use /help para verificar os comandos.\n──────────────────\n Nosso grupo: **[CLIQUE AQUI](https://t.me/combinadomusic).\nFeito por: **Zero 🦝.</b>"
+start_2 : "Salve {0}!\n\nEu sou o {1}! 🤝\n\nMuito melhor que muita JBL por aí e poderoso com alguns recursos incríveis.\n\n<b><u>Plataformas suportadas:</b></u> YouTube, Spotify, Resso, Apple Music e SoundCloud.\n──────────────────\n<b>Use /help para verificar os comandos.\n──────────────────\n Suporte: **[CLIQUE AQUI](https://t.me/COMBINADOASSISTANT_bot).\nFeito por: **Zero 🦝.</b>"
 start_3 : "Ei {0}!\nEu sou o {1}! 🤝\n\nAgora vou derrubar esse grupo... brincadeira. Agora posso tocar músicas nas calls do grupo."
 start_4 : "<b>SUPERGRUPO NECESSÁRIO</b>\n\nPor favor, converta seu <b>grupo</b> para <b>supergrupo</b> e depois me adicione novamente.\n\n<b>COMO FAZER SUPERGRUPO?</b>\n- Torne o histórico de chat do seu grupo <b>visível</b> uma vez."
 start_5 : "<b>GRUPO NA LISTA NEGRA</b>\n\nEste grupo está na lista negra na base de dados {0}.\nSolicite a um <a href={1}>usuário sudo</a> para remover seu chat da lista negra ou visite <a href={2}>o grupo suporte.</a>"
@@ -220,7 +220,7 @@ queue_8 : "<b>{0} Player</b>\n\n<b>Stream:</b> {1}\n\n<b>Tipo de stream:</b> {2}
 
 stream_1 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Título:</b> <a href={0}>{1}</a>\n<b>Duração:</b> {2} minutos\n<b>A pedido de:</b> {3}\n\nSe não for boa, podem xingar essa desgraça!"
 stream_2 : "<b>🦝 Reproduzindo agora...</b>\n\n<b>Tipo de stream:</b> Live stream [URL]\n<b>A pedido de:</b> {0}\n\nSe não for boa, podem xingar essa desgraça!" 
-stream_3 : "<b>Feito por [COMBINADO](https://t.me/combinadomusic)"
+stream_3 : "<b>Feito por [COMBINADO](https://t.me/COMBINADOASSISTANT_bot)"
 
 #General
 CLOSE_BUTTON  : "FECHAR"
