@@ -246,7 +246,7 @@ async def greet_new_member(
             button_text = "VER NOVO MEMBRO"
             add_button_text = "ME ADICIONE NO SEU GRUPO"
             deep_link = f"{user.id}"
-            add_link = f"https://t.me/COMBINADOMUSIC_bot?startgroup=true"
+            add_link = f"https://t.me/COMBINADO_bot?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await client.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
