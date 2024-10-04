@@ -105,7 +105,7 @@ def queuemarkup(_, vidid, chat_id):
         [
             InlineKeyboardButton(
                 text="MAIS",
-                url="https://t.me/combinadomusic",
+                url="https://t.me/COMBINADOASSISTANT_bot",
             ),
         ],
     ]
