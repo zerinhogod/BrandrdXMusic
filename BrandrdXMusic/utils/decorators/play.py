@@ -48,7 +48,7 @@ def PlayWrapper(command):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>grupo suporte</a> para saber o motivo.",
+                    text=f"{app.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>suporte</a> para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
@@ -217,7 +217,7 @@ def CPlayWrapper(command):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    text=f"{i.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>grupo suporte</a> para saber o motivo.",
+                    text=f"{i.mention} em manutenção. Visite o <a href={SUPPORT_CHAT}>suporte</a> para saber o motivo.",
                     disable_web_page_preview=True,
                 )
 
