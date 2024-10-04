@@ -1,7 +1,7 @@
 {
-    "name": "⛦ 𝐁𝐫𝐚𝐧𝐝𝐫𝐝 𝐗 𝐌𝐮𝐬𝐢𝐜 ⛦",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/62fa7c81c56c1ae31c844.jpg",
+    "name": "COMBINADO MUSIC",
+    "description": "A Telegram Music Player Bot and group manager (Group Help Clone), written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/40d2a2e7e036ca734419f.png",
     "keywords": [
     "python3",
     "telegram",
@@ -38,7 +38,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @BRANDEDSTRINGSESSION_BOT on Telegram.",
+        "description": "A Pyrogram v2 String Session from @COMBINADOASSISTANT_bot on Telegram.",
         "value": "",
         "required": true
       },
@@ -58,7 +58,7 @@
         "required": false
       },
       "AUTO_GCAST_MSG": {
-        "description": "Fill here auto broadcast message which will be auto broadcast twice in a day. ( any type of message you can copy and paste here )",
+        "description": "Fill here auto broadcast message which will be auto broadcast twice in a day. (any type of message you can copy and paste here)",
         "value": "",
         "required": false
       }, 
